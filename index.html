@@ -13,603 +13,633 @@
     />
     <title>VR Associates</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img id="logo" src="assets/images/VR Logo.png" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon">≡</span>
-        </button>
+  <body onload="myFunction()">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="assets/images/VR Logo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon">≡</span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items active">
-                  HOME
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items " id="links">
-                  ABOUT
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items ">
-                  SERVICES
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items ">
-                  PORTFOLIO
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items ">
-                  PRICING
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items ">
-                  BLOG
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <div class="navbar-items ">
-                  PAGES
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div
-      id="carousel-example-1z"
-      class="carousel slide carousel-fade"
-      data-ride="carousel"
-      style="position: absolute; z-index: 1;"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carousel-example-1z"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <img
-            class="d-block w-100"
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
-            alt="First slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-            alt="Second slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
-            alt="Third slide"
-          />
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carousel-example-1z"
-        role="button"
-        data-slide="prev"
-      >
-        <span
-          class="carousel-control-prev-icon"
-          aria-hidden="true"
-          style="font-size: 26px;"
-        >
-        </span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carousel-example-1z"
-        role="button"
-        data-slide="next"
-      >
-        <span
-          class="carousel-control-next-icon"
-          aria-hidden="true"
-          style="font-size: 26px;"
-        >
-        </span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <div class="main-content">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <div class="text-before">
-              <div class="text-center" style="width: 250px">
-                <h1 class="font-weight-bold" style="color: white">
-                  V RAVINDRA
-                </h1>
-                <div class="dropdown-divider"></div>
-                <h4 class="associate">
-                  <span class="orange-text">&</span> ASSOCIATES
-                </h4>
-                <div class="dropdown-divider"></div>
-                <h5 class="solicitors">Advocate & Solicitors</h5>
-              </div>
-              <br />
-              <p style="color: white">
-                You will begin to realise why this exercise is called the
-                Dickens Pattern with reference to the ghost showing Scrooge some
-                different futures.
-              </p>
-              <button class="btn hoverable blue-gradient  text-white">
-                DISCOVER NOW
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div>
-              <img src="assets/images/hero-img.webp" />
-            </div>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items active">
+                    HOME
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items " id="links">
+                    ABOUT
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items ">
+                    SERVICES
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items ">
+                    PORTFOLIO
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items ">
+                    PRICING
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items ">
+                    BLOG
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="navbar-items ">
+                    PAGES
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="about-me">
-      <div class="container img-after">
-        <div class="row align-items-center justify-content-center">
-          <div class="col">
-            <div>
-              <img src="assets/images/about-img.webp" />
-            </div>
-          </div>
-          <div class="col">
-            <div>
-              <h6 style="font-weight: bold">ABOUT ME</h6>
-              <br />
-              <h1 class="font-weight-bold">PERSONAL DETAILS</h1>
-              <br />
-              <p class="text-white ">
-                Here, I focus on a range of items and features that we use in
-                life without giving them a second thought. such as Coca Cola.
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco.
-              </p>
-              <button class="btn hoverable blue-gradient  text-white">
-                VIEW FULL DETAILS
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="services" id="servicess">
-      <div class=" text-center pt-5">
-        <h1>My Offered Services</h1>
-        <p class="text-muted">
-          At about this time of year, some months after New Year’s resolutions
-          have been made and<br />
-          kept, or made and neglected.
-        </p>
-      </div>
-      <div class="container text-center mt-5 pb-5">
-        <div class="row">
-          <div class="col-sm">
-            <div class="single-design m-4">
-              <span><i class="fas fa-chart-pie m-4"></i></span>
-              <a href="#"><h4 class="para2">Web Design</h4></a>
-            </div>
-            <p class="mb-4 text-muted para">
-              “It is not because things are difficult that we do not dare; it is
-              because we do not dare that they are difficult.”
-            </p>
-          </div>
-          <div class="col-sm">
-            <div class="single-design m-4">
-              <span><i class="fas fa-desktop m-4"></i></span>
-              <a href="#"><h4 class="para2">Web Development</h4></a>
-            </div>
-            <p class="mb-4 text-muted pata">
-              If you are an entrepreneur, you know that your success cannot
-              depend on the opinions of others. Like the wind, opinions.
-            </p>
-          </div>
-          <div class="col-sm">
-            <div class="single-design m-4">
-              <span><i class="fas fa-camera m-4"></i></span>
-              <a href="#"><h4 class="para2">Photography</h4></a>
-            </div>
-            <p class="mb-4 text-muted para ">
-              Do you want to be even more successful? Learn to love learning and
-              growth. The more effort you put into improving your skills.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="single-design m-4">
-              <span><i class="fas fa-image m-4"></i></span>
-              <a href="#"><h4 class="para2">Clipping Path</h4></a>
-            </div>
-            <p class="mb-4 text-muted patra">
-              Hypnosis quit smoking methods maintain caused quite a stir in the
-              medical world over the last two decades. There is a lot of
-              argument.
-            </p>
-          </div>
-          <div class="col-sm">
-            <div class="single-design m-4">
-              <span><i class="fas fa-mobile-alt m-4"></i></span>
-              <a href="#"><h4 class="para2">Apps Interface</h4></a>
-            </div>
-            <p class="mb-4 text-muted para">
-              Do you sometimes have the feeling that you’re running into the
-              same obstacles over and over again? Many of my conflicts.
-            </p>
-          </div>
-          <div class="col-sm">
-            <div class="single-design m-4">
-              <span><i class="fas fa-rocket m-4"></i></span>
-              <a href="#"><h4 class="para2">Graphic Design</h4></a>
-            </div>
-            <p class="mb-4 text-muted para">
-              You’ve heard the expression, “Just believe it and it will come.”
-              Well, technically, that is true, however, ‘believing’ is not just
-              thinking that.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="achievements">
-      <div class="container">
-        <div class="row text-center align-content-center" id="obx">
-          <div class="col-sm text-white">
-            <span class="no no1">2536</span><br />Projects Completed
-          </div>
-          <div class="col-sm text-white">
-            <span class="no no2">6784</span><br />Happy Clients
-          </div>
-          <div class="col-sm text-white">
-            <span class="no no3">2239</span><br />Cups of Coffee
-          </div>
-          <div class="col-sm text-white">
-            <span class="no no4">434</span><br />Real Professionals
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="services" id="serve" style="padding-bottom: 120px;">
-      <div class=" container text-center">
-        <div style="padding-top: 100px; padding-bottom: 75px;">
-          <h1>Client’s Feedback About Me</h1>
-          <div class="text-muted">
-            It is very easy to start smoking but it is an uphill task to quit
-            it. Ask any chain smoker or even a person.
-          </div>
-        </div>
-        <div>
-          <div class="row">
-            <div class="col-sm feedback">
-              <div class="row" style="padding: 30px;">
-                <div class="col-1">
-                  <img src="assets/images/user1.png" style="height: 40px;" />
-                </div>
-                <div class="col-11" style="padding-left: 50px;text-align: left">
-                  <p class="text-muted">
-                    Do you want to be even more successful? Learn to love
-                    learning and growth. The more effort you put into improving
-                    your skills, the bigger the payoff you.
-                  </p>
-                  <h5 style="font-weight: bold;">Harriet Maxwell</h5>
-                  <h6 class="text-muted">CEO at Google</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm feedback">
-              <div class="row" style="padding: 30px;">
-                <div class="col-1">
-                  <img src="assets/images/user2.png" style="height: 40px;" />
-                </div>
-                <div class="col-11" style="padding-left: 50px;text-align: left">
-                  <p class="text-muted">
-                    A purpose is the eternal condition for success. Every former
-                    smoker can tell you just how hard it is to stop smoking
-                    cigarettes. However.
-                  </p>
-                  <h5 style="font-weight: bold;">Carolyn Clague</h5>
-                  <h6 class="text-muted">CEO at Facebook</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container" id="plan" style="margin-bottom: 100px;">
-      <div class="text-center" style="padding: 130px 0 100px 0;">
-        <h1>Choose Your Plan</h1>
-        <p class="text-muted">
-          When someone does something that they know that they shouldn’t do, did
-          they.
-        </p>
-      </div>
-      <div class="row">
-        <div id="price-card" class="col-sm text-center">
-          <div class="top-part" style="padding-bottom: 20px;">
-            <h1 class="package-no">01</h1>
-            <h4 style="font-size: 25px; font-weight: bold;">Business</h4>
-            <p class="mt-10 text-muted">For the individuals</p>
-          </div>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Secure Online Transfer</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Unlimited Styles for interface</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Reliable Customer Service</p>
-          <div class="dropdown-divider"></div>
-          <div class="price">
-            <h1>&#8377; 1,000.00</h1>
-          </div>
-        </div>
-        <div id="price-card" class="col-sm text-center">
-          <div class="top-part" style="padding-bottom: 20px;">
-            <h1 class="package-no">02</h1>
-            <h4 style="font-size: 25px; font-weight: bold;">Premium</h4>
-            <p class="mt-10 text-muted">For the individuals</p>
-          </div>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Secure Online Transfer</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Unlimited Styles for interface</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Reliable Customer Service</p>
-          <div class="dropdown-divider"></div>
-          <div class="price">
-            <h1>&#8377; 3,000.00</h1>
-          </div>
-        </div>
-        <div id="price-card" class="col-sm text-center">
-          <div class="top-part" style="padding-bottom: 20px;">
-            <h1 class="package-no">03</h1>
-            <h4 style="font-size: 25px; font-weight: bold;">Exclusive</h4>
-            <p class="mt-10 text-muted">For the individuals</p>
-          </div>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Secure Online Transfer</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Unlimited Styles for interface</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Reliable Customer Service</p>
-          <div class="dropdown-divider"></div>
-          <div class="price">
-            <h1>&#8377; 5,000.00</h1>
-          </div>
-        </div>
-        <div id="price-card" class="col-sm text-center">
-          <div class="top-part" style="padding-bottom: 20px;">
-            <h1 class="package-no">04</h1>
-            <h4 style="font-size: 25px; font-weight: bold;">Economy</h4>
-            <p class="mt-10 text-muted">For the individuals</p>
-          </div>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Secure Online Transfer</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Unlimited Styles for interface</p>
-          <div class="dropdown-divider"></div>
-          <p class="text-muted">Reliable Customer Service</p>
-          <div class="dropdown-divider"></div>
-          <div class="price">
-            <h1>&#8377; 10,000.00</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="services" id="blog">
+      </nav>
       <div
-        class="container blog-items text-center"
-        style="padding: 100px 0 40px 0;"
+        id="carousel-example-1z"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+        style="position: absolute; z-index: 1;"
       >
-        <div>
-          <h1>Latest Posts From Our Blog</h1>
-          <p class="text-muted mt-4" style="font-size: 15px;">
-            You may be a skillful, effective employer but if you don’t trust
-            your personnel and the opposite, then the<br />
-            chances of improving and expanding the business
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-example-1z"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carousel-example-1z"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+            style="font-size: 26px;"
+          >
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel-example-1z"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+            style="font-size: 26px;"
+          >
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="main-content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="text-before">
+                <div class="text-center" style="width: 250px">
+                  <h1 class="font-weight-bold" style="color: white">
+                    V RAVINDRA
+                  </h1>
+                  <div class="dropdown-divider"></div>
+                  <h4 class="associate">
+                    <span class="orange-text">&</span> ASSOCIATES
+                  </h4>
+                  <div class="dropdown-divider"></div>
+                  <h5 class="solicitors">Advocate & Solicitors</h5>
+                </div>
+                <br />
+                <p style="color: white">
+                  You will begin to realise why this exercise is called the
+                  Dickens Pattern with reference to the ghost showing Scrooge
+                  some different futures.
+                </p>
+                <button class="btn hoverable blue-gradient  text-white">
+                  DISCOVER NOW
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img src="assets/images/hero-img.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about-me">
+        <div class="container img-after">
+          <div class="row align-items-center justify-content-center">
+            <div class="col">
+              <div>
+                <img src="assets/images/about-img.webp" />
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <h6 style="font-weight: bold">ABOUT ME</h6>
+                <br />
+                <h1 class="font-weight-bold">PERSONAL DETAILS</h1>
+                <br />
+                <p class="text-white ">
+                  Here, I focus on a range of items and features that we use in
+                  life without giving them a second thought. such as Coca Cola.
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+                <button class="btn hoverable blue-gradient  text-white">
+                  VIEW FULL DETAILS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services" id="servicess">
+        <div class=" text-center pt-5">
+          <h1>My Offered Services</h1>
+          <p class="text-muted">
+            At about this time of year, some months after New Year’s resolutions
+            have been made and<br />
+            kept, or made and neglected.
           </p>
         </div>
-        <div class="row" style="margin-top: 50px;">
-          <div class="col-sm blog">
-            <img
-              class="img-thumbnail"
-              src="assets/images/b1.jpg"
-              style="margin-bottom: 10px;"
-            />
-            <div class="row">
-              <div class="col-1">
-                <img src="assets/images/user.webp" />
+        <div class="container text-center mt-5 pb-5">
+          <div class="row">
+            <div class="col-sm">
+              <div class="single-design m-4">
+                <span><i class="fas fa-chart-pie m-4"></i></span>
+                <a href="#"><h4 class="para2">Web Design</h4></a>
               </div>
-              <div class="col-5" style="text-align: left; padding-left: 30px;">
-                <p class="text-muted">Mark Wiens</p>
-              </div>
-              <div class="col-6">
-                <p class="text-muted">
-                  13th Dec <i class="far fa-heart"></i>15
-                  <i class="far fa-comment"></i>04
-                </p>
-              </div>
+              <p class="mb-4 text-muted para">
+                “It is not because things are difficult that we do not dare; it
+                is because we do not dare that they are difficult.”
+              </p>
             </div>
-            <div class="dropdown-divider" style="margin-bottom: 35px;"></div>
-            <h5>BREAK THROUGH SELF DOUBT AND FEAR</h5>
-            <p class="text-muted">
-              Dream interpretation has many forms; it can be done be done for
-              the sake of fun, hobby or can be taken up as a serious career.
-            </p>
+            <div class="col-sm">
+              <div class="single-design m-4">
+                <span><i class="fas fa-desktop m-4"></i></span>
+                <a href="#"><h4 class="para2">Web Development</h4></a>
+              </div>
+              <p class="mb-4 text-muted pata">
+                If you are an entrepreneur, you know that your success cannot
+                depend on the opinions of others. Like the wind, opinions.
+              </p>
+            </div>
+            <div class="col-sm">
+              <div class="single-design m-4">
+                <span><i class="fas fa-camera m-4"></i></span>
+                <a href="#"><h4 class="para2">Photography</h4></a>
+              </div>
+              <p class="mb-4 text-muted para ">
+                Do you want to be even more successful? Learn to love learning
+                and growth. The more effort you put into improving your skills.
+              </p>
+            </div>
           </div>
-          <div class="col-sm blog">
-            <img
-              class="img-thumbnail"
-              src="assets/images/b2.jpg"
-              style="margin-bottom: 10px;"
-            />
-            <div class="row">
-              <div class="col-1">
-                <img src="assets/images/user.webp" />
+          <div class="row">
+            <div class="col-sm">
+              <div class="single-design m-4">
+                <span><i class="fas fa-image m-4"></i></span>
+                <a href="#"><h4 class="para2">Clipping Path</h4></a>
               </div>
-              <div class="col-5" style="text-align: left; padding-left: 30px;">
-                <p class="text-muted">Mark Wiens</p>
-              </div>
-              <div class="col-6">
-                <p class="text-muted">
-                  13th Dec <i class="far fa-heart"></i>15
-                  <i class="far fa-comment"></i>04
-                </p>
-              </div>
+              <p class="mb-4 text-muted patra">
+                Hypnosis quit smoking methods maintain caused quite a stir in
+                the medical world over the last two decades. There is a lot of
+                argument.
+              </p>
             </div>
-            <div class="dropdown-divider" style="margin-bottom: 35px;"></div>
-            <h5>BREAK THROUGH SELF DOUBT AND FEAR</h5>
-            <p class="text-muted">
-              Dream interpretation has many forms; it can be done be done for
-              the sake of fun, hobby or can be taken up as a serious career.
-            </p>
-          </div>
-          <div class="col-sm blog">
-            <img
-              class="img-thumbnail"
-              src="assets/images/b3.jpg"
-              style="margin-bottom: 10px;"
-            />
-            <div class="row">
-              <div class="col-1">
-                <img src="assets/images/user.webp" />
+            <div class="col-sm">
+              <div class="single-design m-4">
+                <span><i class="fas fa-mobile-alt m-4"></i></span>
+                <a href="#"><h4 class="para2">Apps Interface</h4></a>
               </div>
-              <div class="col-5" style="text-align: left; padding-left: 30px;">
-                <p class="text-muted">Mark Wiens</p>
-              </div>
-              <div class="col-6">
-                <p class="text-muted">
-                  13th Dec <i class="far fa-heart"></i>15
-                  <i class="far fa-comment"></i>04
-                </p>
-              </div>
+              <p class="mb-4 text-muted para">
+                Do you sometimes have the feeling that you’re running into the
+                same obstacles over and over again? Many of my conflicts.
+              </p>
             </div>
-            <div class="dropdown-divider" style="margin-bottom: 35px;"></div>
-            <h5>BREAK THROUGH SELF DOUBT AND FEAR</h5>
-            <p class="text-muted">
-              Dream interpretation has many forms; it can be done be done for
-              the sake of fun, hobby or can be taken up as a serious career.
-            </p>
+            <div class="col-sm">
+              <div class="single-design m-4">
+                <span><i class="fas fa-rocket m-4"></i></span>
+                <a href="#"><h4 class="para2">Graphic Design</h4></a>
+              </div>
+              <p class="mb-4 text-muted para">
+                You’ve heard the expression, “Just believe it and it will come.”
+                Well, technically, that is true, however, ‘believing’ is not
+                just thinking that.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="blue-gradient companies" style="height: 235px;">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm"><img src="assets/images/l1.webp" /></div>
-          <div class="col-sm hias"><img src="assets/images/l2.webp" /></div>
-          <div class="col-sm hias"><img src="assets/images/l3.webp" /></div>
-          <div class="col-sm hias"><img src="assets/images/l4.webp" /></div>
-          <div class="col-sm hias"><img src="assets/images/l5.webp" /></div>
+      <div id="achievements">
+        <div class="container">
+          <div class="row text-center align-content-center" id="obx">
+            <div class="col-sm text-white">
+              <span class="no no1">2536</span><br />Projects Completed
+            </div>
+            <div class="col-sm text-white">
+              <span class="no no2">6784</span><br />Happy Clients
+            </div>
+            <div class="col-sm text-white">
+              <span class="no no3">2239</span><br />Cups of Coffee
+            </div>
+            <div class="col-sm text-white">
+              <span class="no no4">434</span><br />Real Professionals
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <footer class="bottom-navbar ">
-      <div class="container text-center  companiess">
+      <div class="services" id="serve" style="padding-bottom: 120px;">
+        <div class=" container text-center">
+          <div style="padding-top: 100px; padding-bottom: 75px;">
+            <h1>Client’s Feedback About Me</h1>
+            <div class="text-muted">
+              It is very easy to start smoking but it is an uphill task to quit
+              it. Ask any chain smoker or even a person.
+            </div>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-sm feedback">
+                <div class="row" style="padding: 30px;">
+                  <div class="col-1">
+                    <img src="assets/images/user1.png" style="height: 40px;" />
+                  </div>
+                  <div
+                    class="col-11"
+                    style="padding-left: 50px;text-align: left"
+                  >
+                    <p class="text-muted">
+                      Do you want to be even more successful? Learn to love
+                      learning and growth. The more effort you put into
+                      improving your skills, the bigger the payoff you.
+                    </p>
+                    <h5 style="font-weight: bold;">Harriet Maxwell</h5>
+                    <h6 class="text-muted">CEO at Google</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm feedback">
+                <div class="row" style="padding: 30px;">
+                  <div class="col-1">
+                    <img src="assets/images/user2.png" style="height: 40px;" />
+                  </div>
+                  <div
+                    class="col-11"
+                    style="padding-left: 50px;text-align: left"
+                  >
+                    <p class="text-muted">
+                      A purpose is the eternal condition for success. Every
+                      former smoker can tell you just how hard it is to stop
+                      smoking cigarettes. However.
+                    </p>
+                    <h5 style="font-weight: bold;">Carolyn Clague</h5>
+                    <h6 class="text-muted">CEO at Facebook</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="plan" style="margin-bottom: 100px;">
+        <div class="text-center" style="padding: 130px 0 100px 0;">
+          <h1>Choose Your Plan</h1>
+          <p class="text-muted">
+            When someone does something that they know that they shouldn’t do,
+            did they.
+          </p>
+        </div>
         <div class="row">
-          <div class="col-sm-5">
-            <h5
-              class="text-white font-weight-bold mb-4"
-              style="text-align: left"
-            >
-              About Me
-            </h5>
-            <p class="text-white-50" style="text-align: left">
-              We have tested a number of registry fix and clean utilities and
-              present our top 3 list on our site for your convenience.
-            </p>
-            <p class="text-white-50" style="text-align: left">
-              Copyright ©2019 All rights reserved | This Website is made with
-              <i class="far fa-heart"></i> by
-              <a
-                href="https://github.com/saurabhguptarock"
-                class="blue-text font-weight-bold"
-                style="cursor: pointer;"
-                >@Saurabh</a
-              >
+          <div id="price-card" class="col-sm text-center">
+            <div class="top-part" style="padding-bottom: 20px;">
+              <h1 class="package-no">01</h1>
+              <h4 style="font-size: 25px; font-weight: bold;">Business</h4>
+              <p class="mt-10 text-muted">For the individuals</p>
+            </div>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Secure Online Transfer</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Unlimited Styles for interface</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Reliable Customer Service</p>
+            <div class="dropdown-divider"></div>
+            <div class="price">
+              <h1>&#8377; 1,000.00</h1>
+            </div>
+          </div>
+          <div id="price-card" class="col-sm text-center">
+            <div class="top-part" style="padding-bottom: 20px;">
+              <h1 class="package-no">02</h1>
+              <h4 style="font-size: 25px; font-weight: bold;">Premium</h4>
+              <p class="mt-10 text-muted">For the individuals</p>
+            </div>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Secure Online Transfer</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Unlimited Styles for interface</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Reliable Customer Service</p>
+            <div class="dropdown-divider"></div>
+            <div class="price">
+              <h1>&#8377; 3,000.00</h1>
+            </div>
+          </div>
+          <div id="price-card" class="col-sm text-center">
+            <div class="top-part" style="padding-bottom: 20px;">
+              <h1 class="package-no">03</h1>
+              <h4 style="font-size: 25px; font-weight: bold;">Exclusive</h4>
+              <p class="mt-10 text-muted">For the individuals</p>
+            </div>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Secure Online Transfer</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Unlimited Styles for interface</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Reliable Customer Service</p>
+            <div class="dropdown-divider"></div>
+            <div class="price">
+              <h1>&#8377; 5,000.00</h1>
+            </div>
+          </div>
+          <div id="price-card" class="col-sm text-center">
+            <div class="top-part" style="padding-bottom: 20px;">
+              <h1 class="package-no">04</h1>
+              <h4 style="font-size: 25px; font-weight: bold;">Economy</h4>
+              <p class="mt-10 text-muted">For the individuals</p>
+            </div>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Secure Online Transfer</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Unlimited Styles for interface</p>
+            <div class="dropdown-divider"></div>
+            <p class="text-muted">Reliable Customer Service</p>
+            <div class="dropdown-divider"></div>
+            <div class="price">
+              <h1>&#8377; 10,000.00</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services" id="blog">
+        <div
+          class="container blog-items text-center"
+          style="padding: 100px 0 40px 0;"
+        >
+          <div>
+            <h1>Latest Posts From Our Blog</h1>
+            <p class="text-muted mt-4" style="font-size: 15px;">
+              You may be a skillful, effective employer but if you don’t trust
+              your personnel and the opposite, then the<br />
+              chances of improving and expanding the business
             </p>
           </div>
-          <div class="col-sm-5 news">
-            <h5
-              class="text-white font-weight-bold mb-4"
-              style="text-align: left"
-            >
-              Newsletter
-            </h5>
-            <p class="text-white-50" style="text-align: left">
-              Stay updated with our latest trends.
-            </p>
-            <input
-              type="email"
-              class="form-control"
-              name="EMAIL"
-              placeholder="Enter Email Address"
-            />
-          </div>
-          <div class="col-sm-2">
-            <h5
-              class="text-white font-weight-bold mb-4"
-              style="text-align: left"
-            >
-              Follow Me
-            </h5>
-            <p class="text-white-50" style="text-align: left">
-              Let us be social
-            </p>
-            <div class="pr-5">
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-sm blog">
+              <img
+                class="img-thumbnail"
+                src="assets/images/b1.jpg"
+                style="margin-bottom: 10px;"
+              />
               <div class="row">
-                <div class="col-3 icon"><i class="fab fa-facebook-f"></i></div>
-                <div class="col-3 icon"><i class="fab fa-twitter"></i></div>
-                <div class="col-3 icon"><i class="fab fa-dribbble"></i></div>
-                <div class="col-3 icon"><i class="fab fa-behance"></i></div>
+                <div class="col-1">
+                  <img src="assets/images/user.webp" />
+                </div>
+                <div
+                  class="col-5"
+                  style="text-align: left; padding-left: 30px;"
+                >
+                  <p class="text-muted">Mark Wiens</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-muted">
+                    13th Dec <i class="far fa-heart"></i>15
+                    <i class="far fa-comment"></i>04
+                  </p>
+                </div>
               </div>
+              <div class="dropdown-divider" style="margin-bottom: 35px;"></div>
+              <h5>BREAK THROUGH SELF DOUBT AND FEAR</h5>
+              <p class="text-muted">
+                Dream interpretation has many forms; it can be done be done for
+                the sake of fun, hobby or can be taken up as a serious career.
+              </p>
+            </div>
+            <div class="col-sm blog">
+              <img
+                class="img-thumbnail"
+                src="assets/images/b2.jpg"
+                style="margin-bottom: 10px;"
+              />
+              <div class="row">
+                <div class="col-1">
+                  <img src="assets/images/user.webp" />
+                </div>
+                <div
+                  class="col-5"
+                  style="text-align: left; padding-left: 30px;"
+                >
+                  <p class="text-muted">Mark Wiens</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-muted">
+                    13th Dec <i class="far fa-heart"></i>15
+                    <i class="far fa-comment"></i>04
+                  </p>
+                </div>
+              </div>
+              <div class="dropdown-divider" style="margin-bottom: 35px;"></div>
+              <h5>BREAK THROUGH SELF DOUBT AND FEAR</h5>
+              <p class="text-muted">
+                Dream interpretation has many forms; it can be done be done for
+                the sake of fun, hobby or can be taken up as a serious career.
+              </p>
+            </div>
+            <div class="col-sm blog">
+              <img
+                class="img-thumbnail"
+                src="assets/images/b3.jpg"
+                style="margin-bottom: 10px;"
+              />
+              <div class="row">
+                <div class="col-1">
+                  <img src="assets/images/user.webp" />
+                </div>
+                <div
+                  class="col-5"
+                  style="text-align: left; padding-left: 30px;"
+                >
+                  <p class="text-muted">Mark Wiens</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-muted">
+                    13th Dec <i class="far fa-heart"></i>15
+                    <i class="far fa-comment"></i>04
+                  </p>
+                </div>
+              </div>
+              <div class="dropdown-divider" style="margin-bottom: 35px;"></div>
+              <h5>BREAK THROUGH SELF DOUBT AND FEAR</h5>
+              <p class="text-muted">
+                Dream interpretation has many forms; it can be done be done for
+                the sake of fun, hobby or can be taken up as a serious career.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="blue-gradient companies" style="height: 235px;">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-sm"><img src="assets/images/l1.webp" /></div>
+            <div class="col-sm hias"><img src="assets/images/l2.webp" /></div>
+            <div class="col-sm hias"><img src="assets/images/l3.webp" /></div>
+            <div class="col-sm hias"><img src="assets/images/l4.webp" /></div>
+            <div class="col-sm hias"><img src="assets/images/l5.webp" /></div>
+          </div>
+        </div>
+      </div>
+      <footer class="bottom-navbar ">
+        <div class="container text-center  companiess">
+          <div class="row">
+            <div class="col-sm-5">
+              <h5
+                class="text-white font-weight-bold mb-4"
+                style="text-align: left"
+              >
+                About Me
+              </h5>
+              <p class="text-white-50" style="text-align: left">
+                We have tested a number of registry fix and clean utilities and
+                present our top 3 list on our site for your convenience.
+              </p>
+              <p class="text-white-50" style="text-align: left">
+                Copyright ©2019 All rights reserved | This Website is made with
+                <i class="far fa-heart"></i> by
+                <a
+                  href="https://github.com/saurabhguptarock"
+                  class="blue-text font-weight-bold"
+                  style="cursor: pointer;"
+                  >@Saurabh</a
+                >
+              </p>
+            </div>
+            <div class="col-sm-5 news">
+              <h5
+                class="text-white font-weight-bold mb-4"
+                style="text-align: left"
+              >
+                Newsletter
+              </h5>
+              <p class="text-white-50" style="text-align: left">
+                Stay updated with our latest trends.
+              </p>
+              <input
+                type="email"
+                class="form-control"
+                name="EMAIL"
+                placeholder="Enter Email Address"
+              />
+            </div>
+            <div class="col-sm-2">
+              <h5
+                class="text-white font-weight-bold mb-4"
+                style="text-align: left"
+              >
+                Follow Me
+              </h5>
+              <p class="text-white-50" style="text-align: left">
+                Let us be social
+              </p>
+              <div class="pr-5">
+                <div class="row">
+                  <div class="col-3 icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <div class="col-3 icon"><i class="fab fa-twitter"></i></div>
+                  <div class="col-3 icon"><i class="fab fa-dribbble"></i></div>
+                  <div class="col-3 icon"><i class="fab fa-behance"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var myVar;
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/slim.min.js"></script>
     <script src="js/popper.min.js"></script>
