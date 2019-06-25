@@ -2,5 +2,8 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
