@@ -1,0 +1,197 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 1.625em;
+  color: #ffffff;
+}
+.navbar-items {
+  cursor: pointer;
+  font-size: 0.7em;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.active {
+  color: #0000b8;
+}
+.navbar-items:hover {
+  transition-delay: 200ms;
+  color: #0000b8;
+}
+.main-content {
+  background-color: transparent;
+  position: relative;
+  height: 100vh;
+  z-index: 100;
+}
+.services {
+  background-color: #f9f9ff;
+}
+a.nav-link,
+a.nav-link:hover {
+  color: black;
+}
+#collapsibleNavbar {
+  margin-left: 300px;
+}
+@media (max-width: 900px) {
+  .img-after {
+    margin-top: 259px;
+    text-align: center;
+    padding: 20px;
+  }
+  .text-before {
+    margin-top: 40px;
+    text-align: center;
+    p {
+      display: none;
+    }
+  }
+  .main-content {
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+
+  .companies {
+    overflow: hidden;
+  }
+  .hias {
+    display: none;
+  }
+  .bottom-navbar {
+    padding-top: 0px;
+    background-color: #f58534;
+  }
+  .news {
+    display: none;
+  }
+}
+.bottom-navbar {
+  height: 400px;
+  background-color: #f58534;
+  overflow: hidden;
+}
+.companies {
+  padding: 70px 0;
+}
+.companiess {
+  padding-top: 100px;
+}
+.icon:hover {
+  font-size: 15px;
+  color: #0000b8;
+}
+.icon {
+  cursor: pointer;
+}
+.single-design,
+.single-design h4 {
+  color: black;
+}
+.single-design:hover h4,
+.single-design:hover {
+  color: #0000b8;
+}
+.fas {
+  font-size: 30px;
+}
+.para {
+  font-size: 14px;
+}
+.para2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+#achievements {
+  height: 321px;
+  background-color: #f58534;
+}
+#about-me {
+  background-color: #f58534;
+}
+.no {
+  font-size: 32px;
+  font-weight: bold;
+}
+#obx {
+  height: 321px;
+}
+
+#logo {
+  width: 200px;
+  height: 50px;
+}
+.feedback {
+  height: 205px;
+  background-color: white;
+  margin: 20px;
+}
+.blog {
+  height: 500px;
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.feedback:hover,
+.blog:hover {
+  cursor: pointer;
+  h5 {
+    transition-delay: 200ms;
+    color: #0000b8;
+  }
+}
+h1 {
+  color: #0000b8;
+}
+#price-card {
+  padding-top: 30px;
+  background-color: #f9f9ff;
+  height: 450px;
+}
+#price-card:hover {
+  background-color: #f58534;
+  cursor: pointer;
+  .dropdown-divider {
+    border-top: 1px solid #0000b8;
+  }
+  .text-muted {
+    color: white;
+  }
+  h4 {
+    color: #0000b8;
+  }
+  h1 {
+    color: white;
+  }
+  .price {
+    color: white;
+  }
+}
+.price {
+  padding: 30px 0 0 0;
+}
+.associate {
+  color: #ffffff;
+  font-family: Raven;
+  font-size: 12px;
+}
+.solicitors {
+  color: #ffffff;
+  font-family: Engraver;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Engraver";
+  src: url("assets/fonts/EngGoth.ttf");
+}
+@font-face {
+  font-family: "Raven";
+  src: url("assets/fonts/raven2_sans.ttf");
+}
